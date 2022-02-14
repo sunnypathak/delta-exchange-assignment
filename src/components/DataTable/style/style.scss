@@ -1,0 +1,40 @@
+.datatable-wrapper {
+  table {
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  table {
+    thead {
+      th {
+        position: sticky;
+        padding: 3px;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        &:first-child {
+          position: sticky;
+          left: 0;
+          z-index: 2;
+        }
+      }
+    }
+    tbody {
+      td {
+        &:first-child {
+          position: sticky;
+          left: 0;
+          background: white;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
